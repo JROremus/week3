@@ -23,7 +23,7 @@ def index():
         }
     ]
 
-    return render_template('index.html', user=user, posts=posts)
+    return render_template('index.html', user=user, posts=posts, title='A Title')
 
 
 app.run()

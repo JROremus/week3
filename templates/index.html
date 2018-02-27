@@ -5,6 +5,11 @@
        <title>Hello {{user.username}}</title>
    </head>
    <body>
-       <h1>Hello, {{user.username}}</h1>
+        <h1>Hello, {{user.username}}</h1>
+
+        {{posts}}
+
+        <div><h1>{{posts[0].title.main}}</h1></div> {{posts[0].body}}
+        <div><h1>{{posts[1].title.main}}</h1></div> {{posts[1].body}}
    </body>
 </html>

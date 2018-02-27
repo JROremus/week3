@@ -3,7 +3,7 @@
 {% block content %}
         <h1>Hello, {{user.username}}</h1>
 
-        {% for post in posts %}
-        <div><h1>{{ post.title.main }}</h1>  {{ post.body }}</div>
+        {% for postin in posts %}
+        <div><h1>{{ postin.title.main }}</h1>  {{ postin.body }}</div>
         {% endfor %}
 {% endblock %}

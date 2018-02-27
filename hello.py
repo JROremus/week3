@@ -25,5 +25,27 @@ def index():
 
     return render_template('index.html', user=user, posts=posts, title='A Title')
 
+@app.route('/store')
+def store():
+
+    items = [
+        {
+            'title': 'Python Book',
+            'body': '200'
+        },
+
+        {
+            'title': 'Cook Book',
+            'body': '2'
+        },
+
+        {
+            'title': 'iPhone X',
+            'body': '1000'
+        }
+    ]
+
+    return render_template('store.html', items=items)
+
 
 app.run()

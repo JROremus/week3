@@ -19,7 +19,7 @@ def index():
 
         {
             'title': {'main': 'I love C#'},
-            'body': 'c# can do some thing, and it is very easy.'
+            'body': 'c# can do some thing, and it is very easy!'
         }
     ]
 

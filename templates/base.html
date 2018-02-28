@@ -12,7 +12,18 @@
         <div><a href="/index">Home</a></div>
         <div><a href="/store">Store</a></div>
         <div><a href="/login">Login</a></div>
-        <hr>
+
+        <div>
+           {% with messages = get_flashed_messages() %}
+               {% if messages %}
+               <ul>
+                   {% for message in messages %}
+                   <li>{{ message }}</li>
+                   {% endfor %}
+               </ul>
+               {% endif %}
+           {% endwith %}
+       </div>
         {% block content %}{% endblock %}
    </body>
 </html>

